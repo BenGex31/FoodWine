@@ -6,7 +6,7 @@ import {Navbar} from 'reactstrap';
 const Header = () => {
     return (
         <Router>
-            <header>
+            <header className='text-center'>
                 <Navbar dark expand="xxl">
                 <Link className="navbar-brand text-white" to='/'><h1 className='text-center'>FoodWine</h1></Link>
                 <button className="navbar-toggler"

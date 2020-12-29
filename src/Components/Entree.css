@@ -1,0 +1,19 @@
+.card {
+    background-color: #E2CDCD;
+    border: 0px;
+}
+
+.card-body {
+    background-color: #AC1E44;
+}
+
+.card-title {
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.card-img {
+    border-bottom-right-radius: 85px;
+    border-bottom-left-radius: 85px;
+}
