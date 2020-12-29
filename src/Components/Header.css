@@ -1,0 +1,12 @@
+header {
+    background-color: #AC1E44;
+    border-radius: 10px;
+  }
+  
+  .navbar-brand, .nav-item {
+    font-weight: bold;
+  }
+  
+  .navbar-toggler {
+    border-color: white;
+  }

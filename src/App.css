@@ -1,15 +1,4 @@
 body {
   font-family: Helvetica, sans-serif, Arial;
-}
-
-header {
-  background-color: #AC1E44;
-}
-
-.navbar-brand, .nav-item {
-  font-weight: bold;
-}
-
-.navbar-toggler {
-  border-color: white;
+  background-color: #E2CDCD;
 }
