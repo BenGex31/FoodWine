@@ -11,13 +11,13 @@ const SectionFood = () => {
             <div className='container-fluid'>
                 <div className='row text-center'>
                     <div className='col-lg-4'>
-                        <DishCard image={EntreeImg} title='Entrée' />
+                        <DishCard image={EntreeImg} title='Entrées' link='/Entrées' />
                     </div>
                     <div className='col-lg-4'>
-                        <DishCard image={platImg} title='Plat' />
+                        <DishCard image={platImg} title='Plats' link='/Plats'/>
                     </div>
                     <div className='col-lg-4'>
-                        <DishCard image={DessertImg} title='Dessert' />
+                        <DishCard image={DessertImg} title='Desserts' link='/Desserts'/>
                     </div>
                 </div>
             </div>

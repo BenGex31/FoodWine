@@ -4,6 +4,9 @@ import {
     Switch,
     Route
   } from "react-router-dom";
+import Entree from './Entree';
+import Plat from './Plat';
+import Dessert from './Dessert';
 
 const Routing = () => {
     return (
@@ -12,13 +15,13 @@ const Routing = () => {
                 <Home />
             </Route>
             <Route path='/Entrées'>
-
+                <Entree />
             </Route>
             <Route path='/Plats'>
-
+                <Plat />
             </Route>
             <Route path='/Desserts'>
-
+                <Dessert />
             </Route>
         </Switch>
     )
