@@ -7,7 +7,7 @@ const MainImg = () => {
         <div id='imgWine' className='container'>
             <div className='row text-center'>
                 <div className='col-lg-12'>
-                    <img src={imgWine} alt='Wine' />
+                    <img className='imgWine' src={imgWine} alt='Wine' />
                 </div>
             </div>
         </div>

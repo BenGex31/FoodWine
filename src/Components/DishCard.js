@@ -1,22 +1,20 @@
 import React from "react";
-import imgEntree from '../img/entrée_FoodWine.jpg'
-import './Entree.css';
-
+import './DishCard.css';
 import {
     Card, CardImg, CardBody,
     CardTitle
   } from 'reactstrap';
   
 
-const Entree = () => {
+const DishCard = (props) => {
     return (
         <Card>
             <CardBody className='text-center'>
-                <CardTitle tag='h5'>Entrées</CardTitle>
+                <CardTitle tag='h3'>{props.title}</CardTitle>
             </CardBody>
-            <CardImg src={imgEntree} />
+            <CardImg src={props.image} />
         </Card>
     )
 }
 
-export default Entree
+export default DishCard

@@ -1,0 +1,25 @@
+footer {
+    background-color: #552D2D;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-top: 5em;
+}
+
+svg {
+    margin-right: 3em;
+    color: white;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 50px;
+    height: 50px;
+}
+
+.Newsletter {
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+li {
+    list-style-type: none;
+}

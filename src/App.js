@@ -1,17 +1,18 @@
-import { Fragment } from 'react';
+import React from 'react'
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
-import Header from "./Components/Header";
-import MainImg from "./Components/MainImg";
-import SectionFood from './Components/SectionFood';
+import Footer from './Layout/Footer';
+import Header from "./Layout/Header";
+import Routing from './Navigation/Routing';
 
 
 function App() {
   return (
-    <Fragment>
+    <Router>
       <Header />
-      <MainImg />
-      <SectionFood />
-    </Fragment>
+        <Routing />
+      <Footer />
+    </Router>
   );
 }
 

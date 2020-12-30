@@ -4,5 +4,10 @@ img {
 }
 
 #imgWine {
-    margin-bottom: 4em;
+    margin-bottom: 6em;
+}
+
+.imgWine {
+    width: 450px;
+    height: 300px;
 }

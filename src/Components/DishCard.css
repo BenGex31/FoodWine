@@ -1,6 +1,10 @@
 .card {
     background-color: #E2CDCD;
     border: 0px;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 3em;
 }
 
 .card-body {
@@ -16,4 +20,8 @@
 .card-img {
     border-bottom-right-radius: 85px;
     border-bottom-left-radius: 85px;
+}
+
+img {
+    height: 180px;
 }

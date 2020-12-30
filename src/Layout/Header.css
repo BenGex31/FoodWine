@@ -1,7 +1,7 @@
 header {
     background-color: #AC1E44;
     border-radius: 10px;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
   }
   
   .navbar-brand, .nav-item {
@@ -10,4 +10,8 @@ header {
   
   .navbar-toggler {
     border-color: white;
+  }
+
+  svg {
+    margin-right: 1em;
   }
