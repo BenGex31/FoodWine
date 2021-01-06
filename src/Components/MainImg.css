@@ -11,3 +11,17 @@ img {
     width: 450px;
     height: 300px;
 }
+
+@media all and (max-width: 430px) {
+    .imgWine {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .imgWine {
+        width: 250px;
+        height: 150px;
+    }
+}

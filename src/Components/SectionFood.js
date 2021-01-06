@@ -14,10 +14,10 @@ const SectionFood = () => {
                         <DishCard image={EntreeImg} title='Entrées' link='/Entrées' />
                     </div>
                     <div className='col-lg-4'>
-                        <DishCard image={platImg} title='Plats' link='/Plats'/>
+                        <DishCard image={platImg} title='Plats' link='/Plats' />
                     </div>
                     <div className='col-lg-4'>
-                        <DishCard image={DessertImg} title='Desserts' link='/Desserts'/>
+                        <DishCard image={DessertImg} title='Desserts' link='/Desserts' />
                     </div>
                 </div>
             </div>

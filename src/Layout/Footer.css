@@ -15,6 +15,28 @@ svg {
     height: 50px;
 }
 
+@media all and (max-width: 800px) {
+    .input-group {
+        padding: 0px 180px 0px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .input-group {
+        padding: 0px 25px 0px;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .input-group {
+        padding: 0px 20px 0px;
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+}
+
 .Newsletter {
     color: white;
     margin-bottom: 0.5em;

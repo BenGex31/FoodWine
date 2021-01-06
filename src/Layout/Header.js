@@ -8,7 +8,7 @@ const Header = () => {
         <div className='container-fluid'>
             <div className='row text-center'>
                 <div className='col'>
-                    <header>
+                    <header id='header'>
                         <Navbar dark expand="xxl">
                             <button className="navbar-toggler"
                                 type="button"
@@ -20,10 +20,10 @@ const Header = () => {
                                 <span className="navbar-toggler-icon"></span>
                             </button>
                             <div className='col'>
-                                <Link className="navbar-brand text-white" to='/'><h1 className='text-center'><i class="fas fa-wine-bottle"></i>FoodWine</h1></Link>
+                                <Link className="navbar-brand" to='/'><h1 className='text-center'><i class="fas fa-wine-bottle"></i>FoodWine</h1></Link>
                             </div>
                             <div className="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
-                                <div className="navbar-nav text-white">
+                                <div className="navbar-nav">
                                     <Link className='nav-item nav-link text-white' to='/Entrées'>Entrées</Link>
                                     <Link className='nav-item nav-link text-white' to='/Plats'>Plats</Link>
                                     <Link className='nav-item nav-link text-white' to='/Desserts'>Desserts</Link>
