@@ -4,7 +4,7 @@ import { Form, FormGroup, Label, Input } from 'reactstrap'
 
 const SelectBudget = () => {
     return (
-        <Container className='mt-5'>
+        <Container className='mt-5 mb-5'>
             <Row>
                 <Col className='d-flex justify-content-center'>
                     <Form>

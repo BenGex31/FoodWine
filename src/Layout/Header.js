@@ -5,10 +5,10 @@ import {Navbar} from 'reactstrap';
 
 const Header = () => {
     return (
-        <div className='container-fluid'>
-            <div className='row text-center'>
-                <div className='col'>
-                    <header id='header'>
+        <header className="position-fixed fixed-top" id='header'>
+            <div className='container-fluid'>
+                <div className='row text-center'>
+                    <div className='col'>
                         <Navbar dark expand="xxl">
                             <button className="navbar-toggler"
                                 type="button"
@@ -30,10 +30,10 @@ const Header = () => {
                                 </div>
                             </div>
                         </Navbar>
-                    </header>
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 

@@ -1,0 +1,15 @@
+.imgListWine {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.blocListWine {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.nameWine {
+    font-weight: bold;
+}

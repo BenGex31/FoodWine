@@ -1,7 +1,10 @@
 header {
   background-color: #AC1E44;
   border-radius: 10px;
-  margin-bottom: 5em;
+}
+
+h1 {
+  font-size: 2rem;
 }
   
 .navbar-brand, .nav-item {

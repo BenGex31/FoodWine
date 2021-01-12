@@ -1,15 +1,16 @@
 img {
-    border-radius: 130px;
-    width: 375px;
+    border-radius: 44px;
+    width: 283px;
 }
 
 #imgWine {
-    margin-bottom: 6em;
+    margin-bottom: 3em;
+    margin-top: 10em;
 }
 
 .imgWine {
-    width: 450px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
 }
 
 @media all and (max-width: 430px) {
