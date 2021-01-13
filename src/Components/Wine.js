@@ -4,11 +4,11 @@ import './Wine.css'
 
 const Wine = (props) => {
     return (
-        <Row className="text-left align-items-center blocListWine">
-            <Col className={props.type + "justify-content-center"} lg="3">
+        <Row className="align-items-center blocListWine">
+            <Col lg="3">
                 <img className="imgListWine" src={props.src} alt={props.nameWine + props.year}></img>
             </Col>
-            <Col lg="9">
+            <Col className="mt-2 mb-2" lg="9">
                 <h6 className="nameWine">{props.nameWine + " " + props.year} {props.description}</h6>
                 <p className="rating">Note : {props.rating}/5</p>
                 <p className="price"> {props.price}</p>

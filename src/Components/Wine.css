@@ -3,11 +3,21 @@
     max-width: 450px;
     height: auto;
     vertical-align: middle;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .blocListWine {
     margin-top: 5em;
     margin-bottom: 5em;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 768px) {
+    .blocListWine {
+        text-align: center;
+    }
 }
 
 .nameWine {

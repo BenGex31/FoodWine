@@ -5,7 +5,7 @@ import {Navbar} from 'reactstrap';
 
 const Header = () => {
     return (
-        <header className="position-fixed fixed-top" id='header'>
+        <header className="sticky-top" id='header'>
             <div className='container-fluid'>
                 <div className='row text-center'>
                     <div className='col'>

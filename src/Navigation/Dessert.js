@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import imgDessert from './../img/dessert_FoodWine.jpg'
 import ListWine from "../Components/ListWine";
 import './Dessert.css'
+import { Container, Col, Row } from "reactstrap";
 
 const Dessert = () => {
     return (
@@ -19,7 +20,13 @@ const Dessert = () => {
             </div>
             <DescriptionListWine />
             <SelectBudget />
-            <ListWine category="dessert" />
+            <Container className="listWine">
+                <Row>
+                    <Col lg="12">
+                        <ListWine category="dessert"/>
+                    </Col>
+                </Row>
+            </Container>
         </Fragment>
     )
 }

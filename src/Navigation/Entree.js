@@ -5,6 +5,7 @@ import SelectBudget from '../Components/SelectBudget'
 import EntreeImg from './../img/entrée_FoodWine.jpg'
 import ListWine from './../Components/ListWine'
 import './Entree.css'
+import { Col, Container, Row } from 'reactstrap'
 
 const Entree = () => {
     return (
@@ -18,7 +19,13 @@ const Entree = () => {
             </div>
             <DescriptionListWine />
             <SelectBudget />
-            <ListWine category="entrée" />
+            <Container className="listWine">
+                <Row>
+                    <Col lg="12">
+                        <ListWine category="entrée" />
+                    </Col>
+                </Row>
+            </Container>
         </Fragment>
     )
 }
