@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
 import DescriptionListWine from '../Components/DescriptionListWine'
 import DishCard from '../Components/DishCard'
-import SelectBudget from '../Components/SelectBudget'
+import FilterWine from '../Components/FilterWine'
 import EntreeImg from './../img/entrée_FoodWine.jpg'
-import ListWine from './../Components/ListWine'
 import './Entree.css'
-import { Col, Container, Row } from 'reactstrap'
+
+
+//const listWine = data.filter(element => element.category === "entrée")
 
 const Entree = () => {
     return (
@@ -18,14 +19,7 @@ const Entree = () => {
                 </div>
             </div>
             <DescriptionListWine />
-            <SelectBudget />
-            <Container className="listWine">
-                <Row>
-                    <Col lg="12">
-                        <ListWine category="entrée" />
-                    </Col>
-                </Row>
-            </Container>
+            <FilterWine category="entrée"/>
         </Fragment>
     )
 }

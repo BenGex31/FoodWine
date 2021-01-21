@@ -1,7 +1,6 @@
 .imgListWine {
     width: 100%;
-    max-width: 450px;
-    height: auto;
+    height: 100%;
     vertical-align: middle;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -17,6 +16,11 @@
 @media all and (max-width: 768px) {
     .blocListWine {
         text-align: center;
+    }
+
+    .imgListWine {
+        width: 40%;
+        height: 40%;
     }
 }
 

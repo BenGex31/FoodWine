@@ -1,12 +1,10 @@
 import React from "react";
 import DescriptionListWine from "../Components/DescriptionListWine";
 import DishCard from "../Components/DishCard";
-import SelectBudget from "../Components/SelectBudget";
 import { Fragment } from "react";
 import imgDessert from './../img/dessert_FoodWine.jpg'
-import ListWine from "../Components/ListWine";
 import './Dessert.css'
-import { Container, Col, Row } from "reactstrap";
+import FilterWine from "../Components/FilterWine";
 
 const Dessert = () => {
     return (
@@ -18,15 +16,8 @@ const Dessert = () => {
                     </div>
                 </div>
             </div>
-            <DescriptionListWine />
-            <SelectBudget />
-            <Container className="listWine">
-                <Row>
-                    <Col lg="12">
-                        <ListWine category="dessert"/>
-                    </Col>
-                </Row>
-            </Container>
+            <DescriptionListWine/>
+            <FilterWine category="dessert" />
         </Fragment>
     )
 }
