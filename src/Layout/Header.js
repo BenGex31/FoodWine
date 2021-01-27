@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css';
 import {Link} from 'react-router-dom'
 import {Navbar} from 'reactstrap';
+import ButtonAddWine from '../Components/ButtonFormAddWine';
 
 const Header = () => {
     return (
@@ -19,8 +20,11 @@ const Header = () => {
                                 aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div className='col'>
+                            <div className='col text-right pl-5'>
                                 <Link className="navbar-brand" to='/'><h1 className='text-center'><i class="fas fa-wine-bottle"></i>FoodWine</h1></Link>
+                            </div>
+                            <div className='col text-right'>
+                                <ButtonAddWine/>
                             </div>
                             <div className="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
                                 <div className="navbar-nav">
