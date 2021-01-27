@@ -1,0 +1,62 @@
+.blocFormAddWine {
+    margin-top: 3em;
+    margin-bottom: 3.25em;
+    padding: 2em;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#titleAddWine {
+    padding-bottom: 1em;
+    font-weight: bold;
+    color: #AC1E44;
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+/*.form-group {
+    width: 400px;
+}*/
+
+label {
+    font-weight: bold;
+}
+
+.labelRadio {
+    font-weight: normal;
+}
+
+#nameUser {
+    margin-bottom: 1em;
+}
+
+#submitAddWine {
+    background-color: #AC1E44;
+    border: 0px solid black;
+    border-radius: 80px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0.5em;
+    margin-right: 100px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#toastAddWine {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    min-width: 250px;
+    
+}
+
+@media all and (max-width: 768px) {
+    #submitAddWine {
+        margin-right: 0px;
+    }
+}
