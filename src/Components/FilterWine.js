@@ -10,29 +10,61 @@ console.log(listWine);
 
 class FilterWine extends React.Component {
     state = {
-        list: listWine,
-        number: listWine.length,
-        filter: ''
+        list: listWine.filter(wine => wine.category === this.props.category),
+        filter: []
     }
 
     handleChange = (event) => {
         event.preventDefault()
-        const currentPrice = event.target.value;
-        console.log('this vaut :', this)
-        const wines = { ...this.state }
+        const currentPrice = parseInt(event.target.value);
 
-        const choice1 = wines.list.filter(wine => wine.price < 10)
-        console.log(choice1)
+        console.log('this vaut :', this)
+
+        const wines = { ...this.state }
+        console.log("Wines", wines);
         
-        if(currentPrice === 1) {
+        let filtering;
+        switch(currentPrice) {
+            case 1:
+                filtering = wine => wine.price < 10;
+                break;
+            case 2:
+                filtering = wine => wine.price >= 10 && wine.price < 20;
+                break;
+            case 3:
+                filtering = wine => wine.price >= 20 && wine.price < 30;
+                break;
+            case 4:
+                filtering = wine => wine.price >= 30 && wine.price < 40
+                break;
+            case 5:
+                filtering = wine => wine.price >= 40 && wine.price < 50
+                break;
+            case 6:
+                filtering = wine => wine.price >= 50
+                break;
+            default:
+                filtering = wine => wine.price > 0
+                break;
+        }
+
+        this.setState({
+            filter: wines.list.filter(wine => filtering(wine)),
+            number: wines.filter.length
+        })
+    }
+
+    componentDidMount() {
+        if (this.state.filter.length === 0) {
             this.setState({
-                filter: wines.list.filter(wine => wine.price < 10)
+                filter: [...this.state.list],
             })
         }
     }
 
     render () {
-        //const { listFilter } = this.state.filter
+        const listFilter = [...this.state.filter]
+
         return (
             <Fragment>
                 <Container className='mt-5 mb-5'>
@@ -57,11 +89,18 @@ class FilterWine extends React.Component {
                             </Form>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col>
+                            <p className="text-center mt-3">
+                            {listFilter.length === 1 ? listFilter.length + " seul vin dans la liste"
+                            : listFilter.length > 1 ? listFilter.length + " vins dans la liste"
+                            : "Il n'y a pas de vin dans cette fourchette de prix..."}
+                            </p>
+                        </Col>
+                    </Row>
                 </Container>
                 <Container className="listWine">
-                    {this.state.list
-                        .filter(wine => wine.category === this.props.category)
-                            .map(wine => (
+                    {listFilter.map(wine => (
                                 <Wine
                                     id={wine.id}
                                     nameWine={wine.nameWine}
