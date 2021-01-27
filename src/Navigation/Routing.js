@@ -7,6 +7,7 @@ import {
 import Entree from './Entree';
 import Plat from './Plat';
 import Dessert from './Dessert';
+import FormAddWine from '../Components/FormAddWine';
 
 const Routing = () => {
     return (
@@ -22,6 +23,9 @@ const Routing = () => {
             </Route>
             <Route path='/Desserts'>
                 <Dessert />
+            </Route>
+            <Route path='/formulaire'>
+                <FormAddWine/>
             </Route>
         </Switch>
     )
