@@ -28,9 +28,9 @@ const Header = () => {
                             </div>
                             <div className="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
                                 <div className="navbar-nav">
-                                    <Link className='nav-item nav-link text-white' to='/Entrées'>Entrées</Link>
-                                    <Link className='nav-item nav-link text-white' to='/Plats'>Plats</Link>
-                                    <Link className='nav-item nav-link text-white' to='/Desserts'>Desserts</Link>
+                                    <Link href="#header" className='nav-item nav-link text-white' to='/Entrées'>Entrées</Link>
+                                    <Link href="#header" className='nav-item nav-link text-white' to='/Plats'>Plats</Link>
+                                    <Link href="#header" className='nav-item nav-link text-white' to='/Desserts'>Desserts</Link>
                                 </div>
                             </div>
                         </Navbar>
