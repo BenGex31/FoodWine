@@ -7,6 +7,17 @@ h1 {
   font-size: 2rem;
 }
 
+header h1:hover {
+  transform: scale(1.15);
+  transition-duration: 400ms;
+  color: #552D2D;
+}
+
+#navbarNavAltMarkup a:hover {
+  text-decoration: none;
+  color: #552D2D!important;
+}
+
 .addWine {
   border-radius: 100px;
   border: solid 1px;
@@ -17,12 +28,22 @@ h1 {
   padding: 0px;
 }
 
+.addWine:hover {
+  transform: scale(1.15);
+  transition-duration: 400ms;
+  background-color: #552D2D;
+}
+
 svg {
   margin-bottom: 4px;
 }
 
 .addWine a {
   color: black;
+}
+
+.addWine a:hover {
+  color: white;
 }
 
 .addWine a:hover {
@@ -37,6 +58,12 @@ svg {
   border-color: white;
 }
 
+.navbar-toggler:hover {
+  border-color: #552D2D;
+  border-width: 5px;
+  transition-duration: 400ms;
+}
+
 svg {
   margin-right: 0.5em;
 }
@@ -48,5 +75,11 @@ svg {
 @media all and (max-width: 380px) {
   h1 {
     font-size: 1.5em;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .navbar-nav a {
+    text-align: left;
   }
 }
