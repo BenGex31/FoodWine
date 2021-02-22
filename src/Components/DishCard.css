@@ -7,6 +7,13 @@
     margin-bottom: 11em;
 }
 
+.card-body:hover {
+    background-color: #552D2D;
+    border-radius: 10px;
+    transform: scale(1.10);
+    transition-duration: 400ms;
+}
+
 .card-body {
     background-color: #AC1E44;
 }
@@ -15,6 +22,11 @@
     color: white;
     font-weight: bold;
     margin: 0px;
+}
+
+.card-title a:hover {
+    color: #AC1E44;
+    text-decoration: none;
 }
 
 .card-img {
