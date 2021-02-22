@@ -13,6 +13,11 @@ img {
     height: 200px;
 }
 
+.imgWine:hover {
+    transform: scale(1.15);
+    transition-duration: 400ms;
+}
+
 @media all and (max-width: 430px) {
     .imgWine {
         width: 350px;
