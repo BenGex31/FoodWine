@@ -5,6 +5,16 @@ import 'popper.js/dist/popper.min.js'
 import '@fortawesome/fontawesome-free/js/brands'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/fontawesome'
+/*import 'sass-loader/dist/getDefaultSassImplementation'
+import 'sass-loader/dist/getSassImplementation'
+import 'sass-loader/dist/index'
+import 'sass-loader/dist/cjs'
+import 'loader-runner/lib/loadLoader'
+import 'loader-runner/lib/LoaderRunner'
+import 'webpack/lib/NormalModule'
+import 'webpack/lib/NormalModuleFactory'
+import 'webpack/lib/Compiler'
+import 'webpack/lib/webpack'*/
 
 import React from 'react';
 import ReactDOM from 'react-dom';
