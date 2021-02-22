@@ -45,6 +45,7 @@ label {
     margin-right: 100px;
     font-weight: bolder;
     font-size: 25px;
+    color: 000000;
 }
 
 #toastAddWine {
@@ -52,7 +53,7 @@ label {
     top: 1rem;
     right: 1rem;
     min-width: 250px;
-    
+
 }
 
 @media all and (max-width: 768px) {
@@ -60,3 +61,4 @@ label {
         margin-right: 0px;
     }
 }
+
