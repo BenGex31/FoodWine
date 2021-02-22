@@ -4,26 +4,94 @@
     vertical-align: middle;
     margin-top: 1em;
     margin-bottom: 1em;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
 }
 
 .blocListWine {
     margin-top: 5em;
     margin-bottom: 5em;
-    border: 1px black solid;
-    border-radius: 10px;
+}
+
+.nameWine{
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.rating {
+    background-color: #552D2D;
+    color: white;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border: 0;
+    border-radius: 53px;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.rating:hover, .more-infos:hover {
+    transform: scale(1.15);
+    transition-duration: 400ms;
+}
+
+.more-infos {
+    border: 0;
+    border-radius: 53px;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #AC1E44;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-header {
+    background-color: #AC1E44;
+    color: white;
+}
+
+.modal-body {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+}
+
+.modal-footer {
+    background-color: #552D2D;
+}
+
+.modal-footer button {
+    background-color: #E2CDCD;
+    border: 1px solid #AC1E44;
+    font-weight: bold;
+}
+
+.modal-footer button:hover {
+    background-color: #AC1E44;
+    color: white;
+    transform: scale(1.05);
+    transition-duration: 400ms;
 }
 
 @media all and (max-width: 768px) {
     .blocListWine {
         text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 1em;
     }
 
     .imgListWine {
-        width: 40%;
-        height: 40%;
+        width: 35%;
     }
 }
 
-.nameWine {
-    font-weight: bold;
+@media all and (max-width: 425px) {
+    .imgListWine {
+        width: 50%;
+    }
 }
