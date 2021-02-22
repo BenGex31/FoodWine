@@ -11,7 +11,7 @@ console.log(listWine);
 class FilterWine extends React.Component {
     state = {
         list: listWine.filter(wine => wine.category === this.props.category),
-        filter: []
+        filter: [],
     }
 
     handleChange = (event) => {
@@ -50,7 +50,7 @@ class FilterWine extends React.Component {
 
         this.setState({
             filter: wines.list.filter(wine => filtering(wine)),
-            number: wines.filter.length
+            number: wines.filter.length,
         })
     }
 
