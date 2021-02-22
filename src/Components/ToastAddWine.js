@@ -6,7 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 // import 'react-toastify/dist/ReactToastify.min.css';
 
 function ToastAddWine(){
-    const notify = () => toast("Bravo ! Votre vin a été ajouté");
+    let message = "Bravo ! Votre vin a bien été ajouté"
+    const notify = () => toast.success(message);
 
     return (
         <div className="col">
