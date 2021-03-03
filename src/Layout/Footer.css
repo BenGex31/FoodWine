@@ -2,6 +2,8 @@ footer {
     background-color: #552D2D;
     border-radius: 10px;
     padding-top: 5px;
+    bottom: 0px;
+    position: relative;
 }
 
 svg {
