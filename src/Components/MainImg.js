@@ -7,7 +7,7 @@ const MainImg = () => {
         <div id='imgWine' className='container'>
             <div className='row text-center'>
                 <div className='col-lg-12'>
-                    <img className='imgWine' src={imgWine} alt='Wine' />
+                    <img className='imgWine animate__animated animate__fadeInDown animate__slow' src={imgWine} alt='Wine' />
                 </div>
             </div>
         </div>
