@@ -64,7 +64,7 @@ class FilterWine extends React.Component {
 
     render () {
         const listFilter = [...this.state.filter]
-
+        
         return (
             <Fragment>
                 <Container className='mt-5 mb-5'>
@@ -91,7 +91,7 @@ class FilterWine extends React.Component {
                     </Row>
                     <Row>
                         <Col>
-                            <p className="text-center mt-3">
+                            <p className="text-center mt-3 numberOfWine">
                             {listFilter.length === 1 ? listFilter.length + " seul vin dans la liste"
                             : listFilter.length > 1 ? listFilter.length + " vins dans la liste"
                             : "Il n'y a pas de vin dans cette fourchette de prix..."}
