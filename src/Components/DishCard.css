@@ -11,7 +11,8 @@
     background-color: #552D2D;
     border-radius: 10px;
     transform: scale(1.10);
-    transition-duration: 400ms;
+    transition: ease-in-out;
+    /*transition-duration: 500ms;*/
 }
 
 .card-body {
