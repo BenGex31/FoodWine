@@ -1,15 +1,20 @@
-import { Row, Col } from 'reactstrap'
+//import { Row, Col } from 'reactstrap'
 import React from 'react';
 import './Wine.css'
+import $ from 'jquery'
 
 const Wine = ({ id, nameWine, year, price, imgWine, description, story, rating}) => {
+    const handleClick = () => {
+        $(".modal fade").addClass("animate__animated animate__fadeOutDown animate__slower")
+    }
     return (
-        <Row className="blocListWine">
-            <Col lg="3">
+        <div className="blocListWine">
+            <div>
                 <img className="imgListWine" src={imgWine} alt={nameWine + year}></img>
-            </Col>
-            <Col className="pt-4" lg="9">
-                <h6 className="nameWine">{nameWine + " " + year} {description}</h6>
+            </div>
+            <div>
+                <h5 className="nameWine">{nameWine + " " + year}</h5>
+                <h6 className="descriptionWine">{description}</h6>
                 <button className="rating">Note : {rating.toFixed(1).replace(".",",")} / 5</button>
                 <p className="price">{ price.toFixed(2).replace(".",",") } €</p>
                 <button className="more-infos" type="button" data-toggle="modal" data-target={"#wine"+id}>
@@ -25,13 +30,13 @@ const Wine = ({ id, nameWine, year, price, imgWine, description, story, rating})
                             {story}
                         </div>
                         <div class="modal-footer">
-                            <button type="button" className="btn" data-dismiss="modal">Fermer</button>
+                            <button onClick={handleClick()} type="button" className="btn" data-dismiss="modal">Fermer</button>
                         </div>
                         </div>
                     </div>
                 </div>
-            </Col>
-        </Row>
+            </div>
+        </div>
     )
 }
 
